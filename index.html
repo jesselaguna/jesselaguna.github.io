@@ -3,161 +3,222 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Jesse Laguna — Accounting student focused on bookkeeping, finance operations, data, and AI-assisted workflows." />
-  <title>Jesse Laguna | Accounting, AI & Workflow Systems</title>
+  <title>Jesse Laguna — Accountant who builds AI systems</title>
+  <meta name="description" content="Jesse Laguna — an accounting student who builds his own AI and ML systems. Accounting rigor plus software I ship: a local-first AI, and a bank-standard (SR 11-7) validation of my own trading model." />
+  <meta property="og:title" content="Jesse Laguna — Accountant who builds AI systems" />
+  <meta property="og:description" content="Accounting rigor plus software I ship. Local-first AI, and a bank-standard validation of my own ML trading model." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <canvas id="abyss-canvas" aria-hidden="true"></canvas>
+  <div class="depth-vignette" aria-hidden="true"></div>
+
   <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="brand" href="#top">Jesse Laguna</a>
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">Jesse Laguna</span>
+      </a>
       <div class="nav-links">
+        <a href="#work">Work</a>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
+        <a href="#resume">Résumé</a>
+        <a class="nav-ext" href="https://github.com/jesselaguna" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
       </div>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Accounting • AI • Data • Workflow Automation</p>
-        <h1>Accounting student building toward AI-assisted finance and business operations.</h1>
-        <p class="lead">
-          I’m an accounting student at San Jose State University focused on bookkeeping,
-          finance operations, data organization, and practical AI-assisted workflows.
-          My background combines service operations, tutoring, accounting coursework,
-          QuickBooks Online simulation work, and self-directed study of modern AI systems.
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">Accounting × AI · San José, CA</p>
+        <h1 class="hero-title">Accountant who builds financial systems alongside modern&nbsp;AI.</h1>
+        <p class="hero-lead">
+          An accounting foundation paired with real engineering — building the financial
+          and analytical tools that usually take two different people. The work runs from
+          bookkeeping and financial analysis through Python, machine learning, and AI
+          systems.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="assets/Jesse_Laguna_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
-          <a class="button secondary" href="#projects">See Projects</a>
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="assets/Jesse_Laguna_Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
         </div>
       </div>
-      <aside class="hero-card" aria-label="Profile summary">
-        <h2>Current Focus</h2>
-        <p>Entry-level accounting, bookkeeping, tax, finance operations, data, and AI/accounting-adjacent roles.</p>
-        <ul>
-          <li>San Jose, CA</li>
-          <li>Remote preferred; open to onsite/hybrid</li>
-          <li>Expected graduation: May 2027</li>
-        </ul>
+
+      <aside class="readout" aria-label="Status">
+        <div class="readout-row"><span class="k">ROLE</span><span class="v">Accounting foundation · systems builder · full-stack orchestrator</span></div>
+        <div class="readout-row"><span class="k">FOCUS</span><span class="v">Accounting × AI × systems</span></div>
+        <div class="readout-row"><span class="k">STATION</span><span class="v">San José State University</span></div>
+        <div class="readout-row"><span class="k">STATUS</span><span class="v"><span class="dot"></span>Open to roles &amp; collaboration</span></div>
       </aside>
     </section>
 
-    <section id="about" class="section two-column">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Accounting foundation with technical curiosity.</h2>
+    <!-- ABOUT / THESIS -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="eyebrow">The intersection</p>
+        <h2>Accounting and software, in one skill set.</h2>
       </div>
-      <div class="content-block">
+      <div class="prose reveal">
         <p>
-          I’m interested in the intersection of accounting, data, AI, and business process improvement.
-          I’ve built practical workplace skills through barbacking, serving, and tutoring, while developing
-          accounting knowledge through coursework and a full small-business QuickBooks Online-style simulation.
+          Accounting graduates rarely build software, and software engineers rarely know
+          the books. Hiring data shows firms increasingly want both in one person, and few
+          candidates have both. That overlap is the focus here.
         </p>
         <p>
-          My AI learning focuses on large language models, transformers, tokenization, context windows,
-          prompt engineering, AI agents, retrieval-based workflows, Claude Code, ChatGPT, Claude, and Gemini.
-          I’m especially interested in using these tools to improve accuracy, organization, and efficiency in
-          accounting and operations workflows.
+          The path was accounting first — to understand how money and businesses actually
+          work — then engineering, to build the analytical and financial tools around it.
+          The approach is practical: accounting judgment decides what's worth building, and
+          modern AI and ML do the building.
         </p>
       </div>
     </section>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Projects</p>
-        <h2>Practical accounting and AI workflow work.</h2>
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Selected work</p>
+        <h2>Things I built and shipped.</h2>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>QuickBooks Online Accounting Simulation</h3>
-          <p class="tag">Accounting Coursework • Small Business Workflows</p>
-          <p>
-            Completed a full small-business accounting simulation for a dog washing company using
-            QuickBooks Online workflows, including transaction entry, account organization, financial data
-            review, bookkeeping tasks, and business reporting concepts.
+
+      <!-- Featured -->
+      <article class="panel panel-feature reveal">
+        <div class="panel-label">
+          <span class="tag">01 · Model risk</span>
+          <span class="status status-live"><span class="dot"></span>Live on GitHub</span>
+        </div>
+        <h3>Independent Model Validation — SR 11-7</h3>
+        <p class="panel-body">
+          I took a machine-learning trading model I built, and validated it against the
+          bank supervisory standard for model risk (Federal Reserve / OCC SR 11-7) — two
+          independent tools (deepchecks + giskard), a formal report, and a fully
+          reproducible environment. The verdict was <em>not approved for deployment</em>,
+          and that's the point: the real skill isn't finding an edge, it's being able to
+          prove to a professional standard that one isn't real.
+        </p>
+        <ul class="chips">
+          <li>Python</li><li>LightGBM</li><li>deepchecks</li><li>giskard</li><li>SR 11-7</li><li>walk-forward validation</li>
+        </ul>
+        <div class="panel-actions">
+          <a class="btn btn-primary btn-sm" href="https://github.com/jesselaguna/ml-model-validation" target="_blank" rel="noopener">View repository ↗</a>
+          <a class="btn btn-ghost btn-sm" href="https://github.com/jesselaguna/ml-model-validation/blob/main/report/model_validation_report.md" target="_blank" rel="noopener">Read the report ↗</a>
+        </div>
+      </article>
+
+      <div class="panel-grid">
+        <article class="panel reveal">
+          <div class="panel-label">
+            <span class="tag">02 · Research</span>
+            <span class="status status-archived">Archived</span>
+          </div>
+          <h3>Algorithmic trading research terminal</h3>
+          <p class="panel-body">
+            A Python research terminal on the Schwab API — data pipelines, an ML signal
+            model, and a walk-forward backtest harness. I built it, tested it honestly
+            across market regimes, and shelved it when the edge didn't hold. That honesty
+            is what became the validation project above.
           </p>
+          <ul class="chips">
+            <li>Python</li><li>ML pipelines</li><li>backtesting</li><li>market data APIs</li>
+          </ul>
         </article>
-        <article class="project-card">
-          <h3>AI-Assisted Workflow & Knowledge Systems</h3>
-          <p class="tag">Personal Projects • AI Productivity</p>
-          <p>
-            Explored AI-assisted workflows for research, writing, career organization, productivity,
-            data organization, and business process improvement using Claude Code, ChatGPT, Claude, and Gemini.
+
+        <article class="panel reveal">
+          <div class="panel-label">
+            <span class="tag">03 · Accounting</span>
+            <span class="status status-core">Foundation</span>
+          </div>
+          <h3>The accounting half</h3>
+          <p class="panel-body">
+            The domain the rest is built on — bookkeeping, reconciliations, journal
+            entries, and financial statements across real small-business workflows in
+            QuickBooks Online, plus the financial-analysis coursework behind an accounting
+            degree at San José State.
           </p>
-        </article>
-        <article class="project-card">
-          <h3>Personal AI / Knowledge System Concept</h3>
-          <p class="tag">Context Systems • Workflow Architecture</p>
-          <p>
-            Developing a private AI-assisted knowledge and workflow system inspired by crosslinked note-taking
-            and context management. The goal is to organize projects, school, career planning, and long-term
-            development into a more searchable and connected personal operating system.
-          </p>
-        </article>
-        <article class="project-card">
-          <h3>Trading & Data Analysis Tool Concept</h3>
-          <p class="tag">Data Exploration • Financial Analysis</p>
-          <p>
-            Explored an early-stage concept for screening stocks, identifying possible buy points,
-            and using data-driven logic to support financial decision-making and automation research.
-          </p>
+          <ul class="chips">
+            <li>QuickBooks Online</li><li>reconciliations</li><li>financial statements</li><li>financial analysis</li>
+          </ul>
         </article>
       </div>
     </section>
 
-    <section id="skills" class="section two-column">
-      <div>
-        <p class="eyebrow">Skills</p>
-        <h2>Accounting, AI, data, and operations.</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <p class="eyebrow">The workbench</p>
+        <h2>What I work with.</h2>
       </div>
-      <div class="skill-list">
-        <div>
-          <h3>Accounting</h3>
-          <p>QuickBooks Online workflows, bookkeeping, transaction recording, journal entries, reconciliations, financial statements, financial analysis.</p>
+      <div class="skills-grid reveal">
+        <div class="skill-col">
+          <h3><span class="skill-idx">A</span>Accounting &amp; finance</h3>
+          <ul>
+            <li>Bookkeeping &amp; reconciliations</li>
+            <li>Journal entries &amp; the close</li>
+            <li>Financial statements</li>
+            <li>QuickBooks Online</li>
+            <li>Financial analysis</li>
+            <li>Model-risk concepts (SR 11-7)</li>
+          </ul>
         </div>
-        <div>
-          <h3>AI & Data</h3>
-          <p>LLMs, transformers, tokenization, context windows, prompt engineering, AI agents, retrieval-based workflows, Claude Code, ChatGPT, Claude, Gemini, Excel, Google Sheets.</p>
+        <div class="skill-col">
+          <h3><span class="skill-idx">B</span>Building</h3>
+          <ul>
+            <li>Python</li>
+            <li>Machine learning (LightGBM)</li>
+            <li>Data pipelines &amp; validation</li>
+            <li>LLM agents &amp; orchestration</li>
+            <li>Retrieval / embeddings</li>
+            <li>Reproducible environments · Git</li>
+          </ul>
         </div>
-        <div>
-          <h3>Professional</h3>
-          <p>Customer service, communication, organization, multitasking, problem-solving, adaptability, tutoring, fast-paced operations.</p>
+        <div class="skill-col">
+          <h3><span class="skill-idx">C</span>The fusion</h3>
+          <ul>
+            <li>AI-augmented bookkeeping</li>
+            <li>Independent model validation</li>
+            <li>Workflow automation</li>
+            <li>Accounting judgment → software</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="resume" class="section resume-section">
-      <div>
-        <p class="eyebrow">Resume</p>
-        <h2>Resume downloads</h2>
-        <p>Use the PDF for normal applications and the DOCX for systems that parse resumes better from Word files.</p>
+    <!-- RESUME + CONTACT -->
+    <section id="resume" class="section closing">
+      <div class="closing-grid">
+        <div class="reveal">
+          <p class="eyebrow">Résumé &amp; portfolio</p>
+          <h2>The full record.</h2>
+          <p class="prose-tight">A résumé for applications — and the work itself, documented, on GitHub.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="assets/Jesse_Laguna_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+            <a class="btn btn-ghost" href="assets/Jesse_Laguna_Resume.docx">DOCX</a>
+            <a class="btn btn-ghost" href="https://github.com/jesselaguna" target="_blank" rel="noopener">Portfolio ↗</a>
+          </div>
+        </div>
+        <div id="contact" class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h3>Let's connect.</h3>
+          <p class="prose-tight">Based in San José — up for roles, collaborations, or just trading notes on accounting and AI.</p>
+          <a class="contact-link" href="mailto:jessealaguna@gmail.com">jessealaguna@gmail.com</a>
+          <a class="contact-link" href="https://github.com/jesselaguna" target="_blank" rel="noopener">github.com/jesselaguna ↗</a>
+        </div>
       </div>
-      <div class="download-row">
-        <a class="button primary" href="assets/Jesse_Laguna_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
-        <a class="button secondary" href="assets/Jesse_Laguna_Resume.docx">Download DOCX</a>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>I’m based in San Jose, California and open to accounting, bookkeeping, finance operations, data, and AI-assisted workflow opportunities.</p>
-      <a class="contact-link" href="mailto:jessealaguna@gmail.com">jessealaguna@gmail.com</a>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Jesse Laguna. Built for accounting, AI, and workflow-focused opportunities.</p>
+    <span>© <span id="year"></span> Jesse Laguna</span>
+    <span class="footer-note">Built from scratch</span>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
